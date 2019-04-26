@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Actors } from 'src/app/class/Actors';
+import { Actors } from './../class/actors';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,6 +8,7 @@ import { Actors } from 'src/app/class/Actors';
 })
 export class HomeComponent implements OnInit {
   constructor() {}
+  actors = Actors;
 
   ngOnInit() {}
 }
